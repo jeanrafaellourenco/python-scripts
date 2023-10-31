@@ -14,7 +14,7 @@ poupança, ou fazer algum investimento confiável, e só tirar quando estiver in
 Terceiro Pote - Fundo de emergência
 
 O terceiro pote também conta com 10% da sua renda, só que esse dinheiro deve ser utilizado em situações de emergência
-ou seja, aquelas em que voce precisa do dinheiro rápido como em casos de doença, acidentes ou viagem inesperada.
+ou seja, aquelas em que você precisa do dinheiro rápido como em casos de doença, acidentes ou viagem inesperada.
 
 Quarto Pote - Educação
 
@@ -25,7 +25,7 @@ sua mente.
 Quinto Pote - Diversão/Férias/Satisfação pessoal
 
 Essa reserva de 10% deve ser realizada para comprar coisas que melhorem sua vida pessoal, como um carro mais novo,
-uma TV nova, a mensalidade da cademia ou serviço de streaming, uma viagem sozinho ou em familia, etc.
+uma TV nova, a mensalidade da academia ou serviço de streaming, uma viagem sozinho ou em família, etc.
 
 Sexto Pote - Presentes/Caridade
 
@@ -36,18 +36,21 @@ esse também é o pote certo.
 Modifique de acordo com suas necessidades!
 '''
 
-print (desc_metodo)
+print(desc_metodo)
 renda = input("\n\nDigite a sua renda mensal: ")
-gastos_fixos = int(renda) * 60 / 100
-aposentadoria = int(renda) * 15 / 100
-fundo_emergencia = int(renda) * 10 / 100
-educacao = int(renda) * 10 / 100
-diversao = int(renda) * 10 / 100
-doacao = int(renda) * 5 / 100
+renda = renda.replace('.', '').replace(',', '.')  # Remova pontos de milhares e substitua vírgula por ponto
+renda = float(renda)  # Converta a renda para float
 
-print ("\n\t* Gastos fixos: %d." % gastos_fixos + "\n")
-print ("\t* Aposentadoria: %d." % aposentadoria + "\n")
-print ("\t* Fundo de emergência: %d." % fundo_emergencia + "\n")
-print ("\t* Educação: %d." % educacao + "\n")
-print ("\t* Diversão/Férias/Satisfação pessoal: %d." % diversao + "\n")
-print ("\t* Presentes/Caridade: %d." % doacao)
+gastos_fixos = renda * 60 / 100
+aposentadoria = renda * 15 / 100
+fundo_emergencia = renda * 10 / 100
+educacao = renda * 10 / 100
+diversao = renda * 10 / 100
+doacao = renda * 5 / 100
+
+print("\n\t* Gastos fixos: R$ %.2f." % gastos_fixos + "\n")
+print("\t* Aposentadoria: R$ %.2f." % aposentadoria + "\n")
+print("\t* Fundo de emergência: R$ %.2f." % fundo_emergencia + "\n")
+print("\t* Educação: R$ %.2f." % educacao + "\n")
+print("\t* Diversão/Férias/Satisfação pessoal: R$ %.2f." % diversao + "\n")
+print("\t* Presentes/Caridade: R$ %.2f." % doacao)
