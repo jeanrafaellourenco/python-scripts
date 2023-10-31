@@ -45,9 +45,9 @@ educacao = int(renda) * 10 / 100
 diversao = int(renda) * 10 / 100
 doacao = int(renda) * 5 / 100
 
-print ("\nGastos fixos: %d." % gastos_fixos + "\n")
-print ("Aposentadoria: %d." % aposentadoria + "\n")
-print ("Fundo de emergência: %d." % fundo_emergencia + "\n")
-print ("Educação: %d." % educacao + "\n")
-print ("Diversão/Férias/Satisfação pessoal: %d." % diversao + "\n")
-print ("Presentes/Caridade: %d." % doacao)
+print ("\n\t* Gastos fixos: %d." % gastos_fixos + "\n")
+print ("\t* Aposentadoria: %d." % aposentadoria + "\n")
+print ("\t* Fundo de emergência: %d." % fundo_emergencia + "\n")
+print ("\t* Educação: %d." % educacao + "\n")
+print ("\t* Diversão/Férias/Satisfação pessoal: %d." % diversao + "\n")
+print ("\t* Presentes/Caridade: %d." % doacao)
